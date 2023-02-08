@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Battle of Chippawa Homepage</title>
+    <title>Gallery</title>
     <style>
       .header {
         background-color: #f1f1f1;
@@ -84,6 +84,27 @@
       .sticky + .content {
         padding-top: 60px;
       }
+	div.gallery {
+  		margin: 5px;
+ 		 border: 1px solid #ccc;
+  		float: left;
+  		width: 180px;
+	}
+
+	div.gallery:hover {
+  		border: 1px solid #777;
+	}
+
+	div.gallery img {
+  		width: 100%;
+  		height: auto;
+	}
+
+	div.desc {
+  		padding: 15px;
+  		text-align: center;
+	}
+	    
     </style>
   </head>
   <body>
@@ -92,13 +113,39 @@
 	</div>
     <div id="bar">
       <a href="index.html">Homepage</a>
-      <a class="active">History</a>
+      <a class="active">Gallery</a>
 	  <a></a>
     </div>
     <div class=content>
-      <h1>Battle of Chippawa History</h1>
-	  <h2>Full Description</h2>
-	  
+      <h1>Battle of Chippawa Gallery</h1>
+	<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="Chippewa.jpg" width="600" height="400">
+  </a>
+  <div class="desc">Winfield Scott leading his infantry brigade forward during the battle</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="1275394a-a376-41b1-9061-339b832c18f8.jpg" width="600" height="400">
+  </a>
+  <div class="desc">A monument near the city of Niagara Falls, Ontario that commemorates the Battle of Chippawa</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_lights.jpg">
+    <img src="6e3d7f53-ea97-4181-85e6-8087e980d4f2.jpg" width="600" height="400">
+  </a>
+  <div class="desc">Soldiers fighting during the Battle of Chippawa</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="Winfield Scott_0.jpg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc">An image of Winfield Scott</div>
+</div>
+
     </div>
     <!STICKY SCRIPT :DDD>
     <script>
