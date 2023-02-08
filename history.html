@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Battle of Chippawa Homepage</title>
+    <style>
+      .header {
+        background-color: #f1f1f1;
+        padding: 30px;
+        text-align: center;
+		background-image: url('1280px-Chippewa Hero.jpeg');
+      }
+      #bar {
+        background-color: black;
+        overflow: hidden;
+      }
+      .content {
+        padding: 16px;
+      }
+
+      .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+
+      .sticky + .content {
+        padding-top: 60px;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        text-align: justify;
+      }
+
+      #bar a {
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        color: #FFFFFF;
+        float: left;
+      }
+
+      #bar a.active {
+        background-color: purple;
+        color: white;
+      }
+
+      #bar a:hover {
+        background-color: white;
+        color: black;
+      }
+
+      h1 {
+        padding-left: 30px;
+        margin-right: 50px;
+      }
+	  
+	  h2 {
+	  	padding-left: 30px;
+		margin-right: 50px;
+	  }
+
+      p {
+        padding-left: 30px;
+        margin-right: 50px;
+      }
+      .about {
+        text-align: center;
+        color: #e4e4e4;
+      }
+      .content {
+        padding: 16px;
+      }
+
+      .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+
+      .sticky + .content {
+        padding-top: 60px;
+      }
+    </style>
+  </head>
+  <body>
+  	<div class="header">
+		<p></p>
+	</div>
+    <div id="bar">
+      <a href="index.html">Homepage</a>
+      <a class="active">History</a>
+	  <a></a>
+    </div>
+    <div class=content>
+      <h1>Battle of Chippawa History</h1>
+	  <h2>Full Description</h2>
+	  
+    </div>
+    <!STICKY SCRIPT :DDD>
+    <script>
+      window.onscroll = function() {myFunction()};
+
+      var navbar = document.getElementById("bar");
+      var sticky = navbar.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+          }
+        }
+      </script>
+    <div class="about">
+      <div style="font-size:13px;">
+        <p>created by me and stuff</p>
+      </div>
+    </div>
+  </body>
+</html>
